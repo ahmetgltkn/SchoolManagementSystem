@@ -1,0 +1,13 @@
+# H2 Database configuration
+spring:
+  datasource:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
