@@ -1,13 +1,12 @@
 package com.example.demo.exceptions;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class AppErrorResponse {
+
     private int status;
     private String message;
     private long timestamp;

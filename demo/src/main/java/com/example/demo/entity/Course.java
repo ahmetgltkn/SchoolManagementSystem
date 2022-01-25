@@ -14,16 +14,18 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+
 public class Course extends BaseEntity {
 
     private String courseName;
-    private String courseCode;
-    private String creditScore;
+    private int courseCode;
+    private double creditScore;
 
     @ManyToOne
     Instructor instructor;
 
+
     @ManyToMany
-    List<Student> studentList;
+    List<Student> studentList ;
 
 }
